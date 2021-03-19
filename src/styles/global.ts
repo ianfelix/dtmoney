@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle, keyframes } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
 :root {
@@ -48,4 +48,15 @@ button {
   opacity: 0.6;
   cursor: not-allowed;
 }
+`;
+
+export const flipCardBottom = keyframes`   
+  0% {
+    transform: rotateX(0);
+   
+  }
+  
+  100% {
+    transform: rotateX(-380deg);
+  }
 `;

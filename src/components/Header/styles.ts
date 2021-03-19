@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { flipCardBottom } from '../../styles/global';
 
 export const Container = styled.header`
   background-color: var(--blue);
@@ -22,6 +23,8 @@ export const Content = styled.div`
     border-radius: 0.25rem;
     height: 3rem;
     transition: filter 0.2s;
+    animation: ${flipCardBottom} 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+      both;
 
     &:hover {
       filter: brightness(0.9);

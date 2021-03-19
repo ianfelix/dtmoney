@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { flipCardBottom } from '../../styles/global';
 
 export const Container = styled.div`
   display: grid;
@@ -11,6 +12,18 @@ export const Container = styled.div`
     padding: 1.5rem 2rem;
     border-radius: 0.25rem;
     color: var(--text-title);
+
+    animation: ${flipCardBottom} 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+      both;
+
+    &:nth-child(2) {
+      animation: ${flipCardBottom} 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+        0.1s both;
+    }
+    &:nth-child(3) {
+      animation: ${flipCardBottom} 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+        0.2s both;
+    }
 
     header {
       display: flex;
