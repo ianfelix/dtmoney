@@ -20,7 +20,13 @@ export const Container = styled.div`
       border: 0;
       background-color: var(--shape);
       color: var(--text-body);
-      border-radius: 0.25rem;
+
+      &:first-child {
+        border-radius: 0.25rem 0 0 0.25rem;
+      }
+      &:last-child {
+        border-radius: 0 0.25rem 0.25rem 0;
+      }
 
       &:first-child {
         color: var(--text-title);
