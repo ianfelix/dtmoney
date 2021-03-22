@@ -3,7 +3,7 @@ import Modal from 'react-modal';
 import closeImg from '../../assets/close.svg';
 import incomeImg from '../../assets/income.svg';
 import outcomeImg from '../../assets/outcome.svg';
-import { TransactionsContext } from '../../TransactionsContext';
+import { TransactionsContext } from '../../context/TransactionsContext';
 import * as S from './styles';
 
 Modal.setAppElement('#root');

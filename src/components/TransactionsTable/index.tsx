@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { TransactionsContext } from '../../TransactionsContext';
+import { TransactionsContext } from '../../context/TransactionsContext';
 import * as S from './styles';
 
 export const TransactionsTable = () => {
